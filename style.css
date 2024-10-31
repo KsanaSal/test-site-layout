@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('fonts/Gilroy-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'GilroyBold', sans-serif;
+    font-size: 16px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: red;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+/* Header style */
+.header-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.navigation a:hover {
+    color: #f07f2e;
+}
+.header-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+  p{
+    font-family: 'Inter', sans-serif;
+  }
