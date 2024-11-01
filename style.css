@@ -38,19 +38,28 @@ img {
 .container {
     margin: 0 auto;
     max-width: 1800px;
+    overflow: hidden;
 }
 
 .section {
     width: 100%;
 }
 
-/* Styles hero */
+/* Styles header */
 .header-page {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    background-color: inherit;
 }
+
 .navigation {
     display: flex;
     align-items: center;
@@ -73,13 +82,17 @@ img {
 /* Styles hero */
 .hero {
     position: relative;
+    z-index: 2;
     height: 1080px;
-    background: right 1013px bottom 0px
-            url(./images/hero-section/intersect-hero.png),
-        center url(./images/hero-section/hero-background.jpg);
+    background: center url(./images/hero-section/hero-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.intersect-hero {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .hero-content {
     position: absolute;
